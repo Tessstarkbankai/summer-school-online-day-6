@@ -1,6 +1,6 @@
 import React from 'react'
 import { ShoppingCart, Heart, Star, Search, Menu, User, ArrowRight, TrendingUp, Zap, Shield, Truck, Quote, CheckCircle } from 'lucide-react';
-
+import { Link } from 'react-router-dom';
 function Hero() {
   return (
     <>      <section className="hero-section" id="home">
@@ -20,7 +20,7 @@ function Hero() {
             </p>
             <div className="hero-buttons">
               <button className="btn-primary">
-                Shop Now
+               <Link to='/product'>Shop Now</Link>
                 <ArrowRight size={20} />
               </button>
               <button className="btn-secondary">View Collection</button>
